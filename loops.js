@@ -14,13 +14,24 @@ Within the _FOR_ loop, use `console.log` to:
 
 var presidents = ['Washington', 'Adams', 'Jefferson', 'Madison', 'Monroe'];
 for (var i=0; i<presidents.length; i++) {
-console.log('value of i is: ' +i);
-console.log('value at index is: ' +presidents[i]);
+// console.log('value of i is: ' +i);
+// console.log('value at index is: ' +presidents[i]);
 }
 
+var presidents = ['Washington', 'Adams', 'Jefferson', 'Madison', 'Monroe'];
+
+function printContent (array){
+	for (var i=0; i<array.length; i++) {
+		console.log('value of i is: ' +i);
+		console.log('value at index is: ' +array[i]);
+	}
+}
+printContent(presidents);
 
 
 /*Declare a variable named `stringOfNumbers` and set it's value to `''` (an empty String).*/
+
+var stringOfNumbers = "''";
 
 /*Then write a _FOR_ loop that appends a Number value to that string starting from `10` all the way up to and including `20`.*/
 
