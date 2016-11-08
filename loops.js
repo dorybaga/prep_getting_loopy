@@ -39,7 +39,7 @@ for (var i=0; i<11; i++) {
 	stringOfNumbers += 10+i;
 	// console.log(stringOfNumbers); //this prints each "loops" results (i.e. 1011, 101112, 10111213.. etc)
 }
-console.log(stringOfNumbers);
+// console.log(stringOfNumbers);
 
 /***bonus:** could you take the code inside of this _FOR_ loop and encapsulate it inside of a function called `appendToString` and still achieve the same result?*/
 
@@ -48,16 +48,22 @@ function appendToString(bucketValue){
 		stringOfNumbers += 10+i;
 	}
 }
-console.log(stringOfNumbers);
+// console.log(stringOfNumbers);
 
-
-
-/*## `Add only even numbrs to an array`
+/*# `Add only even numbrs to an array`
 Declare a variable named `evenNumberArray`.
 
-Use a _FOR_ loop to add only even numbers to an Array. Add `50` even numbers to the `evenNumberArray` starting with the value `0`.*/
+Use a _FOR_ loop to add only even numbers to an Array. Add `50` even numbers to the 
+`evenNumberArray` starting with the value `0`.*/
 
-  
+var evenNumberArray = [0,1,2,3,4,5,6,7,8,9,10];
+
+for (var i=0; i<evenNumberArray.length; i++) {
+	if (evenNumberArray [i]%2 === 0){
+		// console.log(evenNumberArray[i]);
+
+	}
+}
 
 /*## `Accessing only the odd indexes of an Array - 'Not Even Brah'`
 Someone forgot to fill out this array! Oh noes...
