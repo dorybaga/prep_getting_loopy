@@ -22,22 +22,33 @@ var presidents = ['Washington', 'Adams', 'Jefferson', 'Madison', 'Monroe'];
 
 function printContent (array){
 	for (var i=0; i<array.length; i++) {
-		console.log('value of i is: ' +i);
-		console.log('value at index is: ' +array[i]);
+		// console.log('value of i is: ' +i);
+		// console.log('value at index is: ' +array[i]);
 	}
 }
-printContent(presidents);
+// printContent(presidents);
 
 
 /*Declare a variable named `stringOfNumbers` and set it's value to `''` (an empty String).*/
 
-var stringOfNumbers = "''";
+var stringOfNumbers = "";
 
 /*Then write a _FOR_ loop that appends a Number value to that string starting from `10` all the way up to and including `20`.*/
 
-
+for (var i=0; i<11; i++) {
+	stringOfNumbers += 10+i;
+	// console.log(stringOfNumbers); //this prints each "loops" results (i.e. 1011, 101112, 10111213.. etc)
+}
+console.log(stringOfNumbers);
 
 /***bonus:** could you take the code inside of this _FOR_ loop and encapsulate it inside of a function called `appendToString` and still achieve the same result?*/
+
+function appendToString(bucketValue){
+	for (var i=0; i<bucketValue; i++) {
+		stringOfNumbers += 10+i;
+	}
+}
+console.log(stringOfNumbers);
 
 
 
