@@ -124,10 +124,9 @@ turn
 ```*/
 
 for (var i=oopsArray.length-1; i>0; i--){
-	console.log(oopsArray[i]);
+	// console.log(oopsArray[i]);
 
 }
-
 
 /*## `isNapTime`
 Declare a variable named `isNapTime`. Set it to `false`
@@ -137,12 +136,27 @@ Declare a variable named `napSchedule`. Set it's value to be an `Array` with the
 Declare a function named `nap`. This function takes in a single parameter called `schedule`
 
 - If `schedule` is `true` then use `console.log` to display the message `ZzZzZzZz`
-- otherwise if `schedule` is `false` use `console.log` to display the message `Gotta get to work!` and then change the value of `isNapTime` to `true`
+- otherwise if `schedule` is `false` use `console.log` to display the message `Gotta get to work!` 
+and then change the value of `isNapTime` to `true`
 
-Now, Write a FOR loop that iterates through the `napSchedule` array and runs the function `nap` while passing in the value at the current position of `napSchedule` into the `nap` function.*/
+Now, Write a FOR loop that iterates through the `napSchedule` array and runs the function `nap` 
+while passing in the value at the current position of `napSchedule` into the `nap` function.*/
 
+var isNapTime = false;
+var napSchedule = [false, false, true, false, true, true];
 
+function nap (schedule){
+	if (schedule === true) {
+		console.log("ZzZzZzZz");
+	} else {
+		console.log("Gotta get to work!");
+		var isNapTime = true;
+	}
+}
 
+for (var i=0; i<napSchedule.length; i++){
+	nap(napSchedule[i]);
+}
 
 /*Declare a variable named `valuesArray` and set it's value to be an array, `[99, 66, 829, 1941, 8, 76]`.
 
