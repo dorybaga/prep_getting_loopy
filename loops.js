@@ -107,7 +107,7 @@ for (var i=0; i<oopsArray.length; i++) {
 	oopsArray[i]= "nope";
 	}
 }
-console.log(oopsArray);
+// console.log(oopsArray);
 
 /*## `Going backwards?!`
 Using a _FOR_ loop, iterate through the Array stored at `oopsArray` **backwards**. `console.log` each value in the Array.
@@ -123,7 +123,10 @@ nope
 turn
 ```*/
 
+for (var i=oopsArray.length-1; i>0; i--){
+	console.log(oopsArray[i]);
 
+}
 
 
 /*## `isNapTime`
